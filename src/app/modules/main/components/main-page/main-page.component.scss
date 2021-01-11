@@ -1,0 +1,69 @@
+.page-container {
+    height: 768px;
+    width: 1024px;
+
+    display: flex;
+    flex-direction: column;
+    
+
+    background-color: antiquewhite;
+}
+
+.menu {
+
+    height: 90px;
+    width: 1024px;
+
+    margin-top: 10px;
+    // padding-left: 10px;
+    // padding-right: 10px;
+    // padding-bottom: 10px;
+
+    background-color: aquamarine;
+
+    display: flex;
+    align-items: center;
+
+    border-bottom: 1px solid black;    
+}
+
+.week-container {
+    background-color: blueviolet;
+    height: 100%;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.mark-container {
+    background-color: chartreuse;
+    height: 100%;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 12px;
+    padding-right: 12px;
+
+    .week-caption {
+        height: 64px;
+        width: 448px;
+        background-color: cornsilk;
+        margin-bottom: 8px;
+        
+    }
+
+    .marks {
+        width: 100%;
+        height: 80%;
+        background-color: crimson;
+    }
+}
+
+.task-container {
+    background-color: chocolate;
+    height: 100%;
+    width: 50%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

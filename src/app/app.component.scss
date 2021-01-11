@@ -1,0 +1,19 @@
+.wrap {
+    position: relative;
+    width: 100%;
+
+    display: flex;
+      align-items: center;
+      justify-content: center;
+
+  }
+
+  .content-wrapper {
+    
+      min-height: calc(100vh - 57px);
+      max-width: calc(100% - 71px);
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
