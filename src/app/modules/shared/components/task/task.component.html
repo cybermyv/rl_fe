@@ -1,0 +1,53 @@
+<div class="task">
+
+  <div class="task-cell" *ngFor="let task of tasks" (click)="onSelect($event.target, task)">
+
+    <div class="mark" [ngClass]="{ 'todo': task.dayId === 1 && task.mark === 'todo',
+        'done': task.dayId === 1 && task.mark === 'done',
+        'transfer': task.dayId === 1 && task.mark === 'transfer',
+        'cancel': task.dayId === 1 && task.mark === 'cancel'}" data-day="1"
+      attr.data-value="{{ task.dayId === 1 ? task.id: ''}}"></div>
+
+    <div class="mark" [ngClass]="{ 'todo': task.dayId === 2 && task.mark === 'todo',
+        'done': task.dayId === 2 && task.mark === 'done',
+        'transfer': task.dayId === 2 && task.mark === 'transfer',
+        'cancel': task.dayId === 2 && task.mark === 'cancel'}" data-day="2"
+      attr.data-value="{{ task.dayId === 2 ? task.id: ''}}"></div>
+
+    <div class="mark" [ngClass]="{ 'todo': task.dayId === 3 && task.mark === 'todo',
+        'done': task.dayId === 3 && task.mark === 'done',
+        'transfer': task.dayId === 3 && task.mark === 'transfer',
+        'cancel': task.dayId === 3 && task.mark === 'cancel'}" data-day="3"
+      attr.data-value="{{ task.dayId === 3 ? task.id: ''}}"></div>
+
+    <div class="mark" [ngClass]="{ 'todo': task.dayId === 4 && task.mark === 'todo',
+        'done': task.dayId === 4 && task.mark === 'done',
+        'transfer': task.dayId === 4 && task.mark === 'transfer',
+        'cancel': task.dayId === 4 && task.mark === 'cancel'}" data-day="4"
+      attr.data-value="{{ task.dayId === 4 ? task.id: ''}}"></div>
+
+    <div class="mark" [ngClass]="{ 'todo': task.dayId === 5 && task.mark === 'todo',
+        'done': task.dayId === 5 && task.mark === 'done',
+        'transfer': task.dayId === 5 && task.mark === 'transfer',
+        'cancel': task.dayId === 5 && task.mark === 'cancel'}" data-day="5"
+      attr.data-value="{{ task.dayId === 5 ? task.id: ''}}"></div>
+
+    <div class="mark" [ngClass]="{ 'todo': task.dayId === 6 && task.mark === 'todo',
+        'done': task.dayId === 6 && task.mark === 'done',
+        'transfer': task.dayId === 6 && task.mark === 'transfer',
+        'cancel': task.dayId === 6 && task.mark === 'cancel'}" data-day="6"
+      attr.data-value="{{ task.dayId === 6 ? task.id: ''}}"></div>
+
+    <div class="mark" [ngClass]="{ 'todo': task.dayId === 7 && task.mark === 'todo',
+        'done': task.dayId === 7 && task.mark === 'done',
+        'transfer': task.dayId === 7 && task.mark === 'transfer',
+        'cancel': task.dayId === 7 && task.mark === 'cancel'}" data-day="7"
+      attr.data-value="{{ task.dayId === 7 ? task.id: ''}}"></div>
+
+    <div class="task-title">
+        {{task.task}}
+    </div>
+
+  </div>
+
+</div>

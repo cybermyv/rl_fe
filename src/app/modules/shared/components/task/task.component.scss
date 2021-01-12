@@ -1,0 +1,53 @@
+.task {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+
+  
+
+  .task-cell {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .mark {
+      width: 64px;
+      height: 64px;
+      // border: 1px solid black;
+    }
+
+
+    .task-title {
+        width: 500px;
+        // height: 64px;
+        padding-left: 4px;
+        font-size: 18px;
+        // display: table-cell;        
+        // vertical-align: middle;
+        
+    }
+  }
+}
+
+.mark:hover {
+    // border: 1px dotted gray;
+    background-color: honeydew;
+}
+
+
+
+.todo {
+  background-color: green;
+}
+
+.done {
+  background-color: blue;
+}
+
+.transfer {
+  background-color: gray;
+}
+
+.cancel {
+  background-color: red;
+}

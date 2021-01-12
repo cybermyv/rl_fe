@@ -1,0 +1,34 @@
+.week {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    height: 64px;
+    width: 448px;
+
+    .day-cell {
+        border-left: 1px solid black;
+        height: 64px;
+        width: 64px;
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+
+        &__title {
+            font: bold large serif;
+            height: 40px;
+            line-height: 40px;
+        }
+
+        &__date {
+            height: 24px;
+            line-height: 24px;
+            font: small serif;            
+        }    
+    } 
+    
+    .day-cell:first-child {
+        border-left: none;
+    }
+}
+
